@@ -1,0 +1,13 @@
+<ul class="list-group w-50 mx-auto">
+    <div class="list-group-item" *ngFor="let item of pokemon; let i = index">
+        <a href="details/{{ item.name | lowercase  }}/{{ i + 1 }}" class="goToDetails">
+            <span class="d-inline-flex align-items-center justify-content-center text-white rounded m-1 me-2">
+                <i class="sprites">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/{{ i + 1 }}.svg"
+                        width="60px" height="60px" />
+                </i>
+            </span>
+            {{ item.name | titlecase }}
+        </a>
+    </div>
+</ul>

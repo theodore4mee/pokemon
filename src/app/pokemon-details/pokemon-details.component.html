@@ -1,0 +1,11 @@
+<div class="card">
+    <img src="{{ pokemonSprite }}" alt="John" style="width:100%">
+    <h1> {{ pokemonName | titlecase }}</h1>
+    <p><b>Abilities</b></p>
+    <p *ngFor="let item of pokemonAbility; let i = index" class="ability"> {{ item.ability.name | titlecase }} </p>
+    <p><b>Weight</b></p>
+    <p class="ability"> {{ pokemonWeight }}</p>
+    <p><button (click)="goBack()">Back</button></p>
+</div>
+
+<div class="spacer"></div>

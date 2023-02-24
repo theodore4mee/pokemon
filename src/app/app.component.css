@@ -1,0 +1,7 @@
+.header {
+    background-image: url(../assets/img/pokemon-8-logo-svg-vector.svg);
+    background-repeat: no-repeat;
+    background-size: 40em 20em;
+    background-position: top;
+    padding-top: 260px;
+}
